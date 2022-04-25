@@ -1,0 +1,94 @@
+.tableTitle {
+  position: relative;
+  user-select: none;
+}
+.tableTitleResizeRight {
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  display: inline-block;
+  width: 24px;
+  height: 100%;
+  cursor: col-resize;
+  content: '';
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+.tableTitleResizeRightLast {
+  right: 8px;
+}
+.cusMoveTableBox {
+  :global {
+    .ant-table-thead {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #fafafa;
+    }
+  }
+}
+.dropDownContainer {
+  padding: 12px;
+  background: #fff;
+  box-shadow: 1px 1px 5px 0 #ccc;
+}
+.dropDownItem {
+  padding-bottom: 8px;
+  :global {
+    .dragIcon {
+      display: none;
+    }
+  }
+}
+.tableBtnBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 24px;
+}
+.tableBtnBoxLeft {
+  display: flex;
+  align-items: center;
+}
+.tableBtnBoxRight {
+  display: flex;
+  align-items: center;
+}
+.hiddenDrop {
+  display: none;
+}
+.checkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.attributeModal {
+  :global {
+    .dragIcon {
+      display: none;
+    }
+  }
+}
+.wordMask {
+  background-image: linear-gradient(
+    to left,
+    #f75b37,
+    #f9f5d0 25%,
+    #f75b37 50%,
+    #f9f5d0 75%,
+    #f75b37
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: foo-animation 2s infinite linear;
+}
+
+@keyframes foo-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
